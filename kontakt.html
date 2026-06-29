@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Eventify - Kontakt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- W3.CSS Framework -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    
+    <!-- Eigenes CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+    
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header class="w3-top">
+        <div class="w3-bar w3-black w3-padding">
+
+            <a href="../index.html" class="w3-bar-item w3-padding-small">
+                <img src="../img/logo-transp.png" alt="Eventify Logo" class="logo">
+            </a>
+
+            <div class="w3-right">
+                <a href="../index.html" class="w3-bar-item w3-button">Startseite</a>
+                <a href="angebot.html" class="w3-bar-item w3-button">Angebot</a>
+                <a href="ueber-uns.html" class="w3-bar-item w3-button">Über uns</a>
+                <a href="kontakt.html" class="w3-bar-item w3-button">Kontakt</a>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Modal: wird nach dem Absenden angezeigt -->
+    <div id="modal" class="w3-modal">
+        <div class="w3-modal-content w3-card w3-padding w3-animate-zoom" style="max-width:400px;">
+            <h3>Nachricht gesendet!</h3>
+            <p>Wir melden uns so schnell wie möglich bei dir.</p>
+            <button onclick="document.getElementById('modal').style.display='none'"
+                class="w3-button w3-pink w3-block">Schliessen</button>
+        </div>
+    </div>
+
+    <!-- Inhalt -->
+    <main>
+        <section class="w3-container main-content" style="margin-bottom:100px;">
+
+            <!-- Linke Spalte: Kontaktinformationen -->
+            <address class="w3-half w3-padding-small">
+                <header class="section-title">
+                    <h1>Kontaktiere uns</h1>
+                    <div class="gold-line"></div>
+                </header>
+                <h2>Wir freuen uns auf deine Nachricht!</h2>
+                <img src="../icons/mail.svg" alt="Mail">
+                <p>eventify@mail.ch</p>
+                <img src="../icons/phone.svg" alt="Phone">
+                <p>079 123 45 67</p>
+                <img src="../icons/location.svg" alt="Location">
+                <p>Bahnhofstrasse 10, 6000 Luzern</p>
+            </address>
+
+            <!-- Rechte Spalte: Kontaktformular -->
+            <div class="w3-half w3-padding-small">
+                <div class="w3-card w3-padding w3-animate-bottom" id="anfrage">
+                    <form action="#" method="post" novalidate>
+                        <h3>Anfrage senden</h3>
+
+                        <label for="name">Dein Name</label>
+                        <input id="name" class="w3-input w3-border w3-margin-bottom" type="text" name="name"
+                            placeholder="Dein Name" required>
+
+                        <label for="email">Deine E-Mail</label>
+                        <input id="email" class="w3-input w3-border w3-margin-bottom" type="email" name="email"
+                            placeholder="Deine E-Mail" required>
+
+                        <!-- Checkboxen für gewünschte Leistungen -->
+                        <fieldset style="border:none; padding:0; margin-bottom:10px;">
+                            <legend>Welche Leistungen interessieren dich?</legend>
+
+                            <label style="display:block;">
+                                <input type="checkbox" name="leistungen" value="dj"> DJ buchen
+                            </label>
+                            <label style="display:block;">
+                                <input type="checkbox" name="leistungen" value="deko"> Deko mieten
+                            </label>
+                            <label style="display:block; padding-bottom:10px;">
+                                <input type="checkbox" name="leistungen" value="fotobox"> Fotobox mieten
+                            </label>
+                        </fieldset>
+
+                        <label for="nachricht">Deine Nachricht</label>
+                        <textarea id="nachricht" class="w3-input w3-border w3-margin-bottom" name="nachricht" rows="4"
+                            placeholder="Deine Nachricht"></textarea>
+
+                        <!-- Button öffnet Modal statt Formular abzusenden -->
+                        <button type="button" onclick="document.getElementById('modal').style.display='block'"
+                            class="w3-button w3-pink w3-block">Senden</button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-black w3-padding">
+        <p class="w3-center">&copy; 2026 Eventify. Alle Rechte vorbehalten.</p>
+    </footer>
+
+</body>
+
+</html>

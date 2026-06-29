@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <title>Eventify - Angebot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- W3.CSS Framework -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+
+    <!-- Eigenes CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="png" href="../img/favicon.png">
+
+</head>
+
+<body>
+    
+    <!-- Navigation -->
+    <header class="w3-top">
+        <div class="w3-bar w3-black w3-padding">
+
+            <a href="../index.html" class="w3-bar-item w3-padding-small">
+                <img src="../img/logo-transp.png" alt="Eventify Logo" class="logo">
+            </a>
+
+            <div class="w3-right">
+                <a href="../index.html" class="w3-bar-item w3-button">Startseite</a>
+                <a href="angebot.html" class="w3-bar-item w3-button">Angebot</a>
+                <a href="ueber-uns.html" class="w3-bar-item w3-button">Über uns</a>
+                <a href="kontakt.html" class="w3-bar-item w3-button">Kontakt</a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Leistungen mit Cards -->
+        <section class="w3-container main-content" style="margin-bottom:100px;">
+
+            <header class="section-title">
+                <h1>Unsere Leistungen</h1>
+                <div class="gold-line"></div>
+            </header>
+
+            <!-- Cards: 3-spaltig → Tablet 2-spaltig → Handy 1-spaltig -->
+            <section class="w3-row">
+
+                <article class="w3-col s12 m6 l3 w3-padding-small">
+                    <div class="w3-card" style="overflow:hidden; height:100%;">
+                        <img src="../img/dj.jpg" alt="DJ Service"
+                            style="width:100%; height:200px; object-fit:cover; display:block;">
+                        <div class="w3-padding">
+                            <h3 class="w3-text-pink">DJ Service</h3>
+                            <p>Wir liefern den passenden Sound, professionelle Technik und sorgen für die beste
+                                Stimmung.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="w3-col s12 m6 l6 w3-padding-small">
+                    <div class="w3-card" style="overflow:hidden; height:100%;">
+                        <img src="../img/ballons.webp" alt="Deko Verleih"
+                            style="width:100%; height:200px; object-fit:cover; display:block;">
+                        <div class="w3-padding">
+                            <h3 class="w3-text-pink">Deko Verleih</h3>
+                            <p>Von Ballons bis zu Tischdeko – bei uns findest du alles, was dein Event besonders macht.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="w3-col s12 m6 l3 w3-padding-small">
+                    <div class="w3-card" style="overflow:hidden; height:100%;">
+                        <img src="../img/fotobox.webp" alt="Fotobox"
+                            style="width:100%; height:200px; object-fit:cover; display:block;">
+                        <div class="w3-padding">
+                            <h3 class="w3-text-pink">Fotobox</h3>
+                            <p>Unsere Fotobox mit lustigen Requisiten sorgt für Spass und unvergessliche Erinnerungen.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+
+        </section>
+
+        <!-- Video und Audio -->
+        <section class="w3-col w3-padding">
+            <h3>Voll unser Vibe!</h3>
+
+            <section class="w3-col s12 m6 w3-padding-small">
+                <video controls preload="none" style="width:100%;">
+                    <source src="../img/skeleton_video.mp4" type="video/mp4">
+                </video>
+            </section>
+
+            <section class="w3-col s12 m6 w3-padding">
+                <h3>Hör rein!</h3>
+                <audio controls preload="none" style="width:100%;">
+                    <source src="../img/partyaudio.mp3" type="audio/mp3">
+                </audio>
+                <p>Beispielmix für dein Event</p>
+            </section>
+
+        </section>
+
+        <!-- Accordion: Fragen öffnen/schliessen per Klick -->
+        <section class="w3-container w3-padding-16">
+
+            <h2>Häufige Fragen</h2>
+
+            <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-white w3-border w3-left-align">Wie viel
+                kostet ein DJ?</button>
+            <div id="Demo1" class="w3-hide w3-container">
+                <p>Ein DJ kostet im Durchschnitt zwischen 100 und 300 Euro pro Stunde, je nach Erfahrung und Ausrüstung.
+                </p>
+            </div>
+
+            <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-white w3-border w3-left-align">Wie lange
+                im Voraus sollte man buchen?</button>
+            <div id="Demo2" class="w3-hide w3-container">
+                <p>Es ist ratsam, mindestens 2-4 Wochen im Voraus zu buchen, besonders für beliebte Termine.</p>
+            </div>
+
+            <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-white w3-border w3-left-align">Welche
+                Musikrichtungen deckt ihr ab?</button>
+            <div id="Demo3" class="w3-hide w3-container">
+                <p>Wir bieten eine breite Palette von Musikrichtungen an, von Pop und Rock bis Hip-Hop, EDM und mehr.
+                    Wir passen uns gerne deinen Wünschen an!</p>
+            </div>
+
+            <button onclick="myFunction('Demo4')" class="w3-button w3-block w3-white w3-border w3-left-align">Bietet ihr
+                auch Licht- und Tontechnik an?</button>
+            <div id="Demo4" class="w3-hide w3-container">
+                <p>Ja, wir bieten professionelle Licht- und Tontechnik an, um dein Event perfekt in Szene zu setzen.</p>
+            </div>
+
+            <button onclick="myFunction('Demo5')" class="w3-button w3-block w3-white w3-border w3-left-align">Baut ihr
+                auch auf und ab?</button>
+            <div id="Demo5" class="w3-hide w3-container">
+                <p>Ja, wir kümmern uns um den Aufbau und Abbau deines Events.</p>
+            </div>
+
+            <!-- JavaScript: Button wird pink wenn Antwort offen ist, wieder weiss wenn geschlossen -->
+            <script>
+                function myFunction(id) {
+                    var x = document.getElementById(id);
+                    if (x.className.indexOf("w3-show") == -1) {
+                        x.className += " w3-show";
+                        x.previousElementSibling.className =
+                            x.previousElementSibling.className.replace("w3-white", "w3-pink");
+                    } else {
+                        x.className = x.className.replace(" w3-show", "");
+                        x.previousElementSibling.className =
+                            x.previousElementSibling.className.replace("w3-pink", "w3-white");
+                    }
+                }
+            </script>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-black w3-padding">
+        <p class="w3-center">&copy; 2026 Eventify. Alle Rechte vorbehalten.</p>
+    </footer>
+
+</body>
+
+</html>
