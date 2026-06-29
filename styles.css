@@ -1,0 +1,217 @@
+/*--Farben & Variablen--*/
+:root {
+    --gold: #c9a84c;
+    --pink: #ff3f8e;
+    --black: #111111;
+    --white: #ffffff;
+    --grau-hell: #f5f5f5;
+}
+
+/*--Allgemein--*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--black);
+}
+
+/* Pink für alle h2 und h3 */
+h2,
+h3 {
+    color: var(--pink);
+    font-weight: bold;
+}
+
+/*--Abschnittstitel--*/
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h1 {
+    color: var(--pink);
+    font-family: 'Arial Black', Arial, Helvetica, sans-serif;
+}
+
+/* Goldene Trennlinie unter Titeln */
+.gold-line {
+    width: 80px;
+    height: 3px;
+    background-color: var(--gold);
+    margin: 0 auto;
+}
+
+/*--Audio & Video--*/
+.media-bereich {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
+
+/* Abgerundete Ecken für Medienelemente */
+video,
+audio {
+    border-radius: 8px;
+}
+
+/*--W3.CSS Anpassungen--*/
+
+/* Flex-Layout mit Zeilenumbruch überschreiben */
+.w3-row {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+/* Hover- und Aktivzustand der Navigationsbuttons */
+.w3-bar .w3-button:hover,
+.w3-bar .w3-button:active {
+    background-color: var(--pink) !important;
+    color: white !important;
+}
+
+/* CSS für Startseite */
+
+/* Logo */
+.logo {
+    width: 200px;
+}
+
+/* Hero Bereich */
+.hero-section {
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Text zentriert über dem Hero-Bild */
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+}
+
+.hero-title {
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+/* Pinke Buttons & Überschriften */
+.pink-button {
+    background-color: var(--pink);
+    color: white;
+    border-radius: 8px;
+    padding: 12px 24px;
+}
+
+.pink-button:hover {
+    background-color: var(--pink);
+    color: white;
+}
+
+.pink-heading {
+    color: var(--pink);
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Über uns Textbereich */
+.about-text {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Bild rechts neben dem Text */
+.about-image {
+    width: 100%;
+}
+
+/* Services: schwarzer Hintergrund mit weissem Text */
+.services-section {
+    background-color: black;
+    color: white;
+}
+
+.services-section h3 {
+    margin-top: 20px;
+}
+
+/* Schriftgrösse und Zeilenabstand für Services und Animation */
+.services-section p,
+.w3-animate-left p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.w3-animate-left p {
+    margin-top: 15px;
+}
+
+/* Abstand wegen fixierter Navigation */
+.main-content {
+    margin-top: 200px;
+}
+.startseite {
+    margin-top: 100px;
+}
+
+/* Responsive */
+/* Kleinere Schrift und Bildhöhe auf Mobilgeräten */
+@media screen and (max-width: 768px) {
+
+    .hero-title {
+        font-size: 36px;
+    }
+
+    .hero-text {
+        font-size: 18px;
+    }
+
+    .hero-image {
+        height: 450px;
+    }
+}
+
+/* Vorteile: Tablet 2-spaltig, Handy 1-spaltig */
+@media (max-width: 992px) {
+    .vorteile-row>div {
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .vorteile-row>div {
+        width: 100% !important;
+    }
+}
+
+/* Über uns: immer 2-spaltig, auch auf Handy */
+.ueber-uns-row {
+    flex-wrap: nowrap !important;
+}
+
+.ueber-uns-row>div {
+    width: 50% !important;
+}
